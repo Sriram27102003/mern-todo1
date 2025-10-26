@@ -1,5 +1,7 @@
 import axios from "axios";
 
-export default axios.create({
-  baseURL: "https://mern-todo-2j02.onrender.com", // this matches backend port
+const api = axios.create({
+  baseURL: "https://mern-todo-2j02.onrender.com/api", // your backend URL
 });
+
+export default api;
